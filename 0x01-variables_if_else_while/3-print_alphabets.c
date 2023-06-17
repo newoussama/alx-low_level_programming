@@ -18,7 +18,7 @@ int main(void)
 		putchar (na);
 		na++;
 	}
-	putchar('\n');
+
 	while (ma <= 'Z')
 	{
 		putchar (ma);
