@@ -5,12 +5,12 @@
  *
  * Description: code hexa
  *
- * Return: 0 (success)
+ * Return: 0(success)
 */
 
 int main(void)
 {
-	char ma = 0;
+	char ma = '0';
 	char MA = 65;
 
 	while (ma <= '9')
