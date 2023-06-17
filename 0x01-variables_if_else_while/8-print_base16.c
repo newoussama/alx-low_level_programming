@@ -11,19 +11,19 @@
 int main(void)
 {
 	char ma = '0';
-	char MA = 65;
+	char MA = 'a';
 
 	while (ma <= '9')
 	{
 		putchar (ma);
 		ma++;
 	}
-	while (MA <= 70)
+	while (MA <= 'f')
 	{
 		 putchar (MA);
 		 MA++;
 	}
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
