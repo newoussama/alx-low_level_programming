@@ -10,14 +10,21 @@
 
 int main(void)
 {
-	char na = 'a', ma = 'A';
+	char na = 'a';
+	char ma = 'A';
 
-	while (na <= 'z', ma <= 'Z')
+	while (na <= 'z')
 	{
 		putchar (na);
-		putchar (ma);
-		na++, ma++;
+		na++;
 	}
 	putchar('\n');
+	while (ma <= 'Z')
+	{
+		putchar (ma);
+		ma++;
+	}
+	putchar('\n');
+
 	return (0);
 }
