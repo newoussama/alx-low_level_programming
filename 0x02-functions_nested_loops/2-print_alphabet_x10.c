@@ -4,7 +4,7 @@
  * Print_alpha_x10 - function that will print alphabet 10 time
 */
 
-void main(void)
+int main(void)
 {
 	int MA, ma;
 
