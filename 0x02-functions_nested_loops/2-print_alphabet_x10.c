@@ -13,7 +13,8 @@ int main(void)
 		for (ma = 'a'; ma <= 'z'; ma++)
 		{
 			_putchar(ma);
-		_putchar('\n');
 		}
+		_putchar('\n');
+		
 	}
 }
