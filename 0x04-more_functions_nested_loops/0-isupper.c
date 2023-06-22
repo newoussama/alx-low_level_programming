@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	int c;
+	char c;
 
-	for (c >= 65;c <= 90; c++)
+	for (c >= 65; c <= 90; c++)
 		return (1);
-	return (0)
+	return (0);
 }
