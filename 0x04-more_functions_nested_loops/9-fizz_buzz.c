@@ -15,11 +15,10 @@ int main(void)
 	for (ma = 1; ma <= 100; ma++)
 	{
 		if (ma % 3 == 0 && !(ma % 5 == 0))
-		{
 			printf("Fizz");
-		if else(ma % 5 == 0 && !(ma % 3 == 0))
+		else if (ma % 5 == 0 && !(ma % 3 == 0))
 			printf("Buzz");
-		if else(ma % 3 == 0 && ma % 5 == 0)
+		else if (ma % 3 == 0 && ma % 5 == 0)
 			printf("FizzBuzz");
 		else
 			printf("%d", ma);
@@ -27,6 +26,6 @@ int main(void)
 			printf(" ");
 		else
 			printf("\n");
-		}
-		return (0)
+	}
+	return (0);
 }
