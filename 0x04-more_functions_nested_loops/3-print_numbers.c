@@ -10,12 +10,12 @@
 
 void print_numbers(void)
 {
-	int ma;
+	int ma = 0;
 
-	for (ma >= 48 && ma <= 57)
+	do
 	{
-		_putchar(ma);
+		_putchar(ma + 48);
 		ma++;
-	}
+	}while (ma >= 48 && ma <= 57);
 	_putchar('\n');
 }
