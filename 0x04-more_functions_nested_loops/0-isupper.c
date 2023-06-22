@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * _isupper - check if c is upper
  *
- * Description: code print alphabet upper case
+ * 0c: print alphabet upper case
  *
- * Return: 1 (success)
+ * Return: 1 (success) 0 if not
 */
 
-int main(void)
+int _isupper(int c)
 {
-	char c;
-
-	for (c >= 65; c <= 90; c++)
+	if (c >= 65 && c <= 90)
 		return (1);
-	return (0);
+	else
+		return (0);
 }
