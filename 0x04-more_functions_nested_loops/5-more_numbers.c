@@ -12,9 +12,9 @@ void more_numbers(void)
 {
 	int ma, MA, cont;
 
-	for (ma = 1, ma <= 10, ma++)
+	for (MA = 1, MA <= 10, MA++)
 	{
-		for (MA = 0; MA <= 14; MA++)
+		for (cont = 0; cont <= 14; cont++)
 		{
 			ma = cont;
 			if (cont > 9)
