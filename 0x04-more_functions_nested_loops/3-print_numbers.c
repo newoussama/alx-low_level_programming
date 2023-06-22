@@ -14,5 +14,5 @@ void print_numbers(void)
 
 	for (ma >= 48 && ma <= 57)
 		_putchar(ma);
-	putchar('\n');
+	_putchar('\n');
 }
