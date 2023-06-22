@@ -13,6 +13,7 @@
 void print_diagonal(int n)
 {
 	if (n > '0' && n <= '9')
+		-putchar(' ');
 		_putchar(92);
 	else
 		_putchar('\n');
