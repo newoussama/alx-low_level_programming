@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strlen - entry point
@@ -15,5 +14,5 @@ int _strlen(char *s)
 
 	for (ma = 0; *s != '\0'; s++)
 		++ma;
-	return (ma)
+	return (ma);
 }
