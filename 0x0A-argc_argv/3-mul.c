@@ -12,7 +12,7 @@
  * return : 0 (success)
 */
 
-int main(int argc, char const argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
@@ -22,5 +22,5 @@ int main(int argc, char const argv[])
 		printf("%d\n", i);
 	}
 	else
-		return (0);
+		return (1);
 }
