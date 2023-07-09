@@ -22,5 +22,8 @@ int main(int argc, char *argv[])
 		printf("%d\n", i);
 	}
 	else
+	{
+		printf("Error\n");
 		return (1);
+	}
 }
