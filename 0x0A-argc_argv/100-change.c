@@ -9,7 +9,7 @@
  * argc: a argument that cont numbers
  * argv: a string that contine the name of argument
  *
- * return: 0 (success)
+ * return:Always  0 (success)
 */
 
 int main(int argc, char *argv[])
@@ -21,11 +21,11 @@ int main(int argc, char *argv[])
 
 		for (b = 0; b < 5; b++)
 		{
-			if (mny >= cents[i])
+			if (mny >= cents[b])
 			{
-				lcents += mny / cents [i];
-				mny = mny % cents [i];
-				if (mny % cents[i] == 0)
+				lcents += mny / cents[b];
+				mny = mny % cents[b];
+				if (mny % cents[b] == 0)
 				{
 					break;
 				}
