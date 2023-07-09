@@ -22,10 +22,15 @@ int main(int argc, char *argv[])
 		for (c = argv[argc]; *c; c++)
 		{
 			if (*c < '0' || *c > '9')
-				return (printf("Error\n"), 1);
-			i += atoi(argv[argc]);
+			{
+				printf("Error\n");
+				return (1);
+			}
+			else
+				i += atoi(argv[argc]);
 		}
-		printf("%d\n", i);
-		return (0);
+	}
+	printf("%d\n", i);
+	return (0);
 
 }
