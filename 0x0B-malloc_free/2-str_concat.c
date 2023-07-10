@@ -54,8 +54,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			ma[i] = s2[i - sz1];
 		}
-		ma = '\0';
-		return (ma);
-
 	}
+	ma = '\0';
+	return (ma);
 }
