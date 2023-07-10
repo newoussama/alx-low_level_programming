@@ -32,5 +32,5 @@ char *_strdup(char *str)
 		for (; n < sz; n++)
 			rt[n] = str[n];
 	}
-	return (tr);
+	return (rt);
 }
