@@ -19,13 +19,13 @@ int *array_range(int min, int max)
 	int *array_;
 
 	sz = max - min + 1;
-	array_ = (int*)malloc(sz * sizeof(int));
+	array_ = (int *)malloc(sz * sizeof(int));
 
 	if (min > max)
-		return NULL;
+		return (NULL);
 
 	if (array_ == NULL)
-		return NULL;
+		return (NULL);
 
 	for (b = 0; b < sz; b++)
 	{
