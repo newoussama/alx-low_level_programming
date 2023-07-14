@@ -19,9 +19,9 @@ int *array_range(int min, int max)
 	int *array_range = (int*)malloc(sz * sizeof(int));
 
 	if (array_range == NULL)
-		return (NULL);
+		return NULL;
 	if (min > max)
-		return (NULL);
+		return NULL;
 
 	for (int b = 0; b < sz; b++)
 	{
