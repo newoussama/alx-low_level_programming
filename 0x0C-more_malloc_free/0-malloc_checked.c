@@ -21,6 +21,6 @@ void *malloc_checked(unsigned int b)
 		return (NULL);
 
 	for (i = 0; i < b; i++)
-		arer[i] = i++;
+		arer[i] = i;
 	return (arer);
 }
