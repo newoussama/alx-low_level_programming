@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - entry point
  *
  * Description: a programe that print his name
  *
- * @argc: a argument to cont arguments
- * @argv: contain the arguments
- *
  * Return: always 0 (success)
 */
 
-int main(argc, argv[])
+int main(void)
 {
-	_putchar(argv[0]);
-	_putchar('\n');
+	printf("%s\n", _FILE_);
 
 	return (0);
 
