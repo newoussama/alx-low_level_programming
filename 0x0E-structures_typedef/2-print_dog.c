@@ -14,12 +14,6 @@
 
 void print_dog(struct dog *d)
 {
-	d = (struct dog *)malloc(sizeof(struct dog));
-
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
-
 	if (d)
 	{
 	printf("Name: %s\n", d->name ? d->name : "(nil)");
