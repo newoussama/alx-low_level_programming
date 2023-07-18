@@ -12,7 +12,7 @@
  * of a spacefic dog
 */
 
-typedef struct 
+typedef struct dog
 {
 	char *name;
 	float age;
