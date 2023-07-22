@@ -1,6 +1,5 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * get_op_fu - pointer to a function
@@ -12,7 +11,7 @@
  * return : integer
 */
 
-oppe get_op_func(char *s)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
         {"+", op_add},
@@ -24,10 +23,11 @@ oppe get_op_func(char *s)
 	};
 	int i;
 
-	for (i = 0; ops[i].operator != NULL; i++)
+	while (ops[i].op != NULL)
 	{
-		if (strcmp(s, ops[i].operator) == 0)
-			return (ops.func);
+		if (*(ops[i].op) == *s && s[1] == '\0')
+			return (ops[i].f);
+		i++;
 	}
-	return NULL;	
+	return NULL;
 }
