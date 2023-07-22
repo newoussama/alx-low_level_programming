@@ -1,4 +1,4 @@
-#include <3-calc.h>
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,7 +19,7 @@
  * Return: 98(error), 99(error), 100 (error), 0 (success)
 */
 
-int main(argc, argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
@@ -35,7 +35,7 @@ int main(argc, argv[])
 
 	if (op_func == NULL)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		return (99);
 	}
 
