@@ -32,7 +32,7 @@ int sum_them_all(const unsigned int n, ...)
 		int s = 0;
 
 		s += x;
+		va_end(args);
+		return (x);
 	}
-	va_end(args);
-	return (x);
 }
