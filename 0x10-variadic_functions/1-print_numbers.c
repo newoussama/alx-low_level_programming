@@ -23,6 +23,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	va_start(printn, n);
 	while (i--)
+	{
 		int n = va_arg(printn, int);
-		printf("%d%s", n, i ? (separator ? separator : "") : '\n');
+
+		printf("%d%s", n, i ? (separator ? separator : "") : "\n");
+	}
+}
 			
