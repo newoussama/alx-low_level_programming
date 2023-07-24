@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h> 
 
 /**
  * print_all: variadic function to print data type
@@ -14,47 +13,50 @@
 
 void print_all(const char * const format, ...)
 {
+	int i = 0;
+	int flag;
+
 	va_list all;
 
 	va_start(all, format);
 
-	char const *pmu = format;
-
-	while (*pmu)
+	while (format != NULL && format[i] != '\0')
 	{
-		if (*pmu == '%')
+		switch (*format)
 		{
-			pmu++;
-			switch (*pmu)
+			case 'c':
+				printf("%c", va_arg(all, int));
+				flag = 1;
+				break;
+			case 'i':
+				printf("%d", va_arg(all, int));
+				flag = 1;
+				break;
+			case 'f':
+				printf("%f", va_arg(all, double));
+				flag = 1;
+				break;
+			case 's':
 			{
-				case 'c':
-					printf("%c", va_arg(all, int));
-					break;
-				case 'i':
-					printf("%d", va_arg(all, int));
-					break;
-				case 'f':
-					printf("%f", va_arg(all, double));
-					break;
-				case 's':
-				{
-					char *spr = va_arg(all, char *);
+				char *spr = va_arg(all, char *);
 
-					if (spr == NULL)
-						printf("(nil)");
-					else
-						printf("%s", spr);
+				if (spr == NULL)
+					printf("(nil)");
+				else
+				{
+					printf("%s", spr);
+					flag = 1;
 					break;
 				}
 				default:
+					flag = 0;
 					break;
-
 			}
+			if (format[i] != '\0' && flag == 1)
+				printf(", ");
+			i++;
 		}
-		else
-			putchar(*pmu);
-		pmu++;
+		printf("\n");
+		va_end(all);
 	}
-	va_end(all);
-	putchar('\n');
 }
