@@ -14,12 +14,12 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == NULL)
+	if (n == 0)
 	{
-		return (-1);
+		return (0);
 	}
 	else
 	{
-		return (n * _sqrt_recursion(n));
+		return (n + _sqrt_recursion(n - 1) + n - 1);
 	}
 }
