@@ -13,14 +13,14 @@
  * Return: 0 or 1 (success)
 */
 
-int pdr_chk(char *str1, char *str2, int f, int c)
+int pdr_chk(char *s1, char *s2, int f, int c)
 {
-	if (str1[f] == '\0' && str2[c] == '\0')
+	if (s1[f] == '\0' && s2[c] == '\0')
 		return (1);
-	if (str1[f] == str2[c])
-		return (pdr_chk(str1, str2, f + 1, c + 1));
-	if (str1[f] == '\0' && str2[c] == '*')
-		return (ptr_chk(str1, str2, f, c + 1) || ptr_chk(str1, str2, f + 1, c));
+	if (s1[f] == s2[c])
+		return (pdr_chk(s1, s2, f + 1, c + 1));
+	if (s1[f] == '\0' && s2[c] == '*')
+		return (pdr_chk(s1, s2, f, c + 1) || pdr_chk(s1, s2, f + 1, c));
 	return (0);
 }
 
