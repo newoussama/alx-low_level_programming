@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 {
 	int i, add = 0;
 
-	if (argc == 1)
+	if (argc <= 1)
 		printf("0\n");
 	else
 	{
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 			}
 			add += num;
 		}
-		 printf("%d\n", add);
+		printf("%d\n", add);
 	}
 	return (0);
 }
