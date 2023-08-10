@@ -37,12 +37,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	pgr = malloc(sizeof(int) * size);
+	pgr = malloc(sizeof(int) * nmemb);
 
 	if (pgr == NULL)
 		return(NULL);
 
-	_memset(pgr, 0, sizeof(int) * size);
+	_memset(pgr, 0, sizeof(int) * nmemb);
 
 	return (pgr);
 }
