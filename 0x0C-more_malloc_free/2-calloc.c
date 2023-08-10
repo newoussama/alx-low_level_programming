@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"main.h"
+#include <string.h>
 
 /**
  * _calloc: memory allocated initialised to zero
@@ -17,12 +18,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
-		exit(0);
+		return (NULL);
 	pgr = malloc(nmemb * size);
 
-	for (i = 0; i < nmemb; i++)
-		pgr = 0;
+	memset(pgr, 0, nmemb * size);
+
 	if (pgr == NULL)
-		exit(0);
+		return(NULL);
 	return (pgr);
 }
