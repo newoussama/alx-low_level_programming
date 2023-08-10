@@ -4,24 +4,6 @@
 #include <string.h>
 
 /**
- * _memset: a function that copy a string in another memory loca
- * 
- * @s: pointer to put the constant
- * @b:canstant
- * @l: max size to use
- *
- * return: pointer
-*/
-char *_memset(char *s; char b; unsigned int l)
-{
-	char *pvr = s;
-
-	while (l--)
-		*s++ = b;
-	return (pvr);
-}
-
-/**
  * _calloc: memory allocated initialised to zero
  *
  * @nmemb: number of element
@@ -42,7 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (pgr == NULL)
 		return(NULL);
 
-	_memset(pgr, 0, sizeof(int) * nmemb);
+	memset(pgr, 0, sizeof(int) * nmemb);
 
 	return (pgr);
 }
