@@ -16,7 +16,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *pgr;
 	unsigned int i;
-	unsigned char *bytePgr = (unsigned char *)pgr;
+	unsigned char *bytePgr;
+
+	pgr = malloc(nmemb * size);
+
+	bytePgr = (unsigned char *)pgr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
