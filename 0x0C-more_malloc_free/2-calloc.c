@@ -6,18 +6,18 @@
 /**
  * _memset: a function that copy a string in another memory loca
  * 
- * @m: pointer to put the constant
- * @f:canstant
+ * @s: pointer to put the constant
+ * @b:canstant
  * @l: max size to use
  *
  * return: pointer
 */
-char *_memset(char *m; char f; unsigned int l)
+char *_memset(char *s; char b; unsigned int l)
 {
-	char *pvr = m;
+	char *pvr = s;
 
-	while (m--)
-		*m++ = f;
+	while (l--)
+		*s++ = b;
 	return (pvr);
 }
 
@@ -34,10 +34,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *pgr;
 
-	pgr = malloc(sizeof(int) * size);
-
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+
+	pgr = malloc(sizeof(int) * size);
 
 	if (pgr == NULL)
 		return(NULL);
