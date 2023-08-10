@@ -19,5 +19,5 @@ void *malloc_checked(unsigned int b)
 	ft = (int *)malloc(b * sizeof(int));
 
 	if (ft == NULL)
-		return (98);
+		*ft = 98;
 }
