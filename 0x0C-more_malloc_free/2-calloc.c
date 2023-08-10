@@ -26,10 +26,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	pgr = malloc(nmemb * size);
 
+	if (pgr == NULL)
+		return(NULL);
+
 	for (i = 0; i < nmemb * size; i++)
 		bytePgr[i] = 0;
 
-	if (pgr == NULL)
-		return(NULL);
 	return (pgr);
 }
