@@ -21,7 +21,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	pgr = malloc(nmemb * size);
 
-	memset(pgr, 0, nmemb * size);
+	unsigned char *bytePgr = (unsigned char *)pgr;
+
+	for (i = 0; i < nmemb * size; i++)
+		bytePgr[i] = 0;
 
 	if (pgr == NULL)
 		return(NULL);
