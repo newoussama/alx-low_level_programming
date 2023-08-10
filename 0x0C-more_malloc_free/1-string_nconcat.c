@@ -4,7 +4,7 @@
 #include<string.h>
 
 /**
- * string_nconcat: a function that concatinate two strings
+ * string_nconcat: function that concatinate strings
  *
  * @s1: the first string
  * @s2: the segand string
@@ -12,7 +12,7 @@
  *
  * Description: function that concatinate two strings
  *
- * return: NULL or pointers (success)
+ * return: pointer to space in memory containing concatinate string
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
