@@ -1,5 +1,4 @@
-#include <dog.h>
-
+#include"dog.h"
 /**
  * init_dog: a function that initiatea structure
  *
@@ -8,7 +7,7 @@
  * @age: the age of the dog
  * @owner: the name of the owner
  *
- * Return: a pointer to structure
+ * Return: void
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
